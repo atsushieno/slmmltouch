@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlMMLTouch", "SlMMLTouch\SlMMLTouch.csproj", "{092F7B05-371B-4544-89C8-198D7CB5B08A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlMMLTouchApp", "SlMMLTouchApp\SlMMLTouchApp.csproj", "{58584FDC-C4C2-465C-9FAB-49E0D4468B28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092F7B05-371B-4544-89C8-198D7CB5B08A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{092F7B05-371B-4544-89C8-198D7CB5B08A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{092F7B05-371B-4544-89C8-198D7CB5B08A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{092F7B05-371B-4544-89C8-198D7CB5B08A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{092F7B05-371B-4544-89C8-198D7CB5B08A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{092F7B05-371B-4544-89C8-198D7CB5B08A}.Release|iPhone.Build.0 = Release|iPhone
+		{092F7B05-371B-4544-89C8-198D7CB5B08A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{092F7B05-371B-4544-89C8-198D7CB5B08A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{58584FDC-C4C2-465C-9FAB-49E0D4468B28}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{58584FDC-C4C2-465C-9FAB-49E0D4468B28}.Debug|iPhone.Build.0 = Debug|iPhone
+		{58584FDC-C4C2-465C-9FAB-49E0D4468B28}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{58584FDC-C4C2-465C-9FAB-49E0D4468B28}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{58584FDC-C4C2-465C-9FAB-49E0D4468B28}.Release|iPhone.ActiveCfg = Release|iPhone
+		{58584FDC-C4C2-465C-9FAB-49E0D4468B28}.Release|iPhone.Build.0 = Release|iPhone
+		{58584FDC-C4C2-465C-9FAB-49E0D4468B28}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{58584FDC-C4C2-465C-9FAB-49E0D4468B28}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SlMMLTouchApp\SlMMLTouchApp.csproj
+	EndGlobalSection
+EndGlobal

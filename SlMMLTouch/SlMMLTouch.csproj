@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{092F7B05-371B-4544-89C8-198D7CB5B08A}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SlMML</RootNamespace>
+    <AssemblyName>SlMML</AssemblyName>
+    <MtouchSdkVersion>3.0</MtouchSdkVersion>
+    <MtouchMinimumOS>3.0</MtouchMinimumOS>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <CodePage>65001</CodePage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>False</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Events\" />
+    <Folder Include="Modulators\" />
+    <Folder Include="Parsers\" />
+    <Folder Include="MonoTouch\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Events\Close.cs" />
+    <Compile Include="Events\Detune.cs" />
+    <Compile Include="Events\Envelope.cs" />
+    <Compile Include="Events\Eot.cs" />
+    <Compile Include="Events\Event.cs" />
+    <Compile Include="Events\Expression.cs" />
+    <Compile Include="Events\Form.cs" />
+    <Compile Include="Events\Input.cs" />
+    <Compile Include="Events\LFO.cs" />
+    <Compile Include="Events\LPF.cs" />
+    <Compile Include="Events\NoiseFrequency.cs" />
+    <Compile Include="Events\Nop.cs" />
+    <Compile Include="Events\Note.cs" />
+    <Compile Include="Events\NoteOff.cs" />
+    <Compile Include="Events\NoteOn.cs" />
+    <Compile Include="Events\NoteSwitch.cs" />
+    <Compile Include="Events\Output.cs" />
+    <Compile Include="Events\Pan.cs" />
+    <Compile Include="Events\PWM.cs" />
+    <Compile Include="Events\Ring.cs" />
+    <Compile Include="Events\Sync.cs" />
+    <Compile Include="Events\Tempo.cs" />
+    <Compile Include="Events\VCF.cs" />
+    <Compile Include="Events\VCO.cs" />
+    <Compile Include="Events\Volume.cs" />
+    <Compile Include="Events\VolumeMode.cs" />
+    <Compile Include="Events\Vowel.cs" />
+    <Compile Include="Modulators\FCDPCM.cs" />
+    <Compile Include="Modulators\FCNoise.cs" />
+    <Compile Include="Modulators\FCTriangle.cs" />
+    <Compile Include="Modulators\GBLongNoise.cs" />
+    <Compile Include="Modulators\GBShortNoise.cs" />
+    <Compile Include="Modulators\GBWave.cs" />
+    <Compile Include="Modulators\IModulator.cs" />
+    <Compile Include="Modulators\Modulator.cs" />
+    <Compile Include="Modulators\Noise.cs" />
+    <Compile Include="Modulators\Pulse.cs" />
+    <Compile Include="Modulators\Saw.cs" />
+    <Compile Include="Modulators\Sine.cs" />
+    <Compile Include="Modulators\Triangle.cs" />
+    <Compile Include="Parsers\FlMMLStyleParser.cs" />
+    <Compile Include="Parsers\IParsable.cs" />
+    <Compile Include="Parsers\Parser.cs" />
+    <Compile Include="Channel.cs" />
+    <Compile Include="Compiler.cs" />
+    <Compile Include="Envelope.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="Formant.cs" />
+    <Compile Include="Oscillator.cs" />
+    <Compile Include="Sample.cs" />
+    <Compile Include="Sequencer.cs" />
+    <Compile Include="Track.cs" />
+    <Compile Include="MonoTouch\MediaElement.cs" />
+    <Compile Include="MonoTouch\CoreAudioController.cs" />
+    <Compile Include="MonoTouch\SoundPlayer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties InternalTargetFrameworkVersion="IPhone" />
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

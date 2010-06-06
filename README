@@ -1,0 +1,19 @@
+This is an experimental port of SlMML to MonoTouch.
+http://sourceforge.jp/projects/ocmml/svn/view/trunk/slmml/?root=ocmml&pathrev=42
+
+SlMML is licensed under the new BSD license.
+http://sourceforge.jp/projects/ocmml/
+
+SlMMLTouch is a ported library of SlMML (svn r138). Notable changes are:
+
+	- removed Japanese characeters (comments and #region names), which
+	  somehow crash MonoDevelop text editor.
+	- removed dependency on Silverlight MediaStreamSource and MediaElement.
+	- added some support classes for MonoTouch and CoreAudio.
+
+SlMMLTouchApp is a proof of concept example iPad application (not really done).
+So far it has a text box to write MML text and a play button.
+Play operation somehow causes crash (heisenbug), and it does not perform well.
+
+Atsushi Eno
+
